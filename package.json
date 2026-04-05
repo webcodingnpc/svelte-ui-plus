@@ -1,0 +1,61 @@
+{
+    "name": "svelte-ui-plus",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "基于 Svelte 5 的 UI 组件库，提供 78+ 组件",
+    "keywords": [
+        "svelte",
+        "svelte5",
+        "ui",
+        "components",
+        "svelte-ui-plus"
+    ],
+    "license": "MIT",
+    "author": "free-walk",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/webcodingnpc/svelte-ui-plus.git"
+    },
+    "svelte": "./index.ts",
+    "main": "./dist/svelte-ui-plus.cjs",
+    "module": "./dist/svelte-ui-plus.mjs",
+    "types": "./dist/types/types.ts",
+    "exports": {
+        ".": {
+            "svelte": "./index.ts",
+            "import": "./dist/svelte-ui-plus.mjs",
+            "require": "./dist/svelte-ui-plus.cjs",
+            "default": "./dist/svelte-ui-plus.mjs"
+        },
+        "./dist/styles.css": "./dist/styles.css",
+        "./dist/*": "./dist/*",
+        "./styles/*": "./styles/*",
+        "./components/*": "./components/*"
+    },
+    "unpkg": "./dist/svelte-ui-plus.iife.js",
+    "jsdelivr": "./dist/svelte-ui-plus.iife.js",
+    "files": [
+        "dist",
+        "components",
+        "styles",
+        "utils",
+        "index.ts",
+        "README.md"
+    ],
+    "sideEffects": [
+        "**/*.css",
+        "**/*.scss"
+    ],
+    "scripts": {
+        "build": "node scripts/build.js",
+        "build:docs": "node scripts/build-docs.js"
+    },
+    "peerDependencies": {
+        "svelte": "^5.0.0"
+    },
+    "devDependencies": {
+        "esbuild": "^0.27.4",
+        "sass": "^1.98.0",
+        "svelte": "^5.55.1"
+    }
+}

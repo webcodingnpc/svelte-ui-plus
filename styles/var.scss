@@ -1,0 +1,108 @@
+/**
+ * SvelteUI CSS 变量 — 主题定制
+ * 覆盖这些变量即可自定义主题
+ */
+
+:root {
+    // ========== 品牌色 ==========
+    --su-color-primary: #409eff;
+    --su-color-primary-light-3: #79bbff;
+    --su-color-primary-light-5: #a0cfff;
+    --su-color-primary-light-7: #c6e2ff;
+    --su-color-primary-light-9: #ecf5ff;
+    --su-color-primary-dark-2: #337ecc;
+
+    --su-color-success: #67c23a;
+    --su-color-success-light-3: #95d475;
+    --su-color-success-light-5: #b3e19d;
+    --su-color-success-light-7: #d1edc4;
+    --su-color-success-light-9: #f0f9eb;
+    --su-color-success-dark-2: #529b2e;
+
+    --su-color-warning: #e6a23c;
+    --su-color-warning-light-3: #eebe77;
+    --su-color-warning-light-5: #f3d19e;
+    --su-color-warning-light-7: #f8e3c5;
+    --su-color-warning-light-9: #fdf6ec;
+    --su-color-warning-dark-2: #b88230;
+
+    --su-color-danger: #f56c6c;
+    --su-color-danger-light-3: #f89898;
+    --su-color-danger-light-5: #fab6b6;
+    --su-color-danger-light-7: #fcd3d3;
+    --su-color-danger-light-9: #fef0f0;
+    --su-color-danger-dark-2: #c45656;
+
+    --su-color-info: #909399;
+    --su-color-info-light-3: #b1b3b8;
+    --su-color-info-light-5: #c8c9cc;
+    --su-color-info-light-7: #dedfe0;
+    --su-color-info-light-9: #f4f4f5;
+    --su-color-info-dark-2: #73767a;
+
+    // ========== 文字色 ==========
+    --su-text-color-primary: #303133;
+    --su-text-color-regular: #606266;
+    --su-text-color-secondary: #909399;
+    --su-text-color-placeholder: #a8abb2;
+    --su-text-color-disabled: #c0c4cc;
+
+    // ========== 边框色 ==========
+    --su-border-color: #dcdfe6;
+    --su-border-color-light: #e4e7ed;
+    --su-border-color-lighter: #ebeef5;
+    --su-border-color-extra-light: #f2f6fc;
+    --su-border-color-dark: #d4d7de;
+
+    // ========== 背景色 ==========
+    --su-bg-color: #ffffff;
+    --su-bg-color-page: #f2f3f5;
+    --su-bg-color-overlay: #ffffff;
+
+    // ========== 填充色 ==========
+    --su-fill-color: #f0f2f5;
+    --su-fill-color-light: #f5f7fa;
+    --su-fill-color-lighter: #fafafa;
+    --su-fill-color-blank: #ffffff;
+
+    // ========== 圆角 ==========
+    --su-border-radius-base: 4px;
+    --su-border-radius-small: 2px;
+    --su-border-radius-round: 20px;
+    --su-border-radius-circle: 50%;
+
+    // ========== 字体大小 ==========
+    --su-font-size-extra-large: 20px;
+    --su-font-size-large: 18px;
+    --su-font-size-medium: 16px;
+    --su-font-size-base: 14px;
+    --su-font-size-small: 13px;
+    --su-font-size-extra-small: 12px;
+
+    // ========== 行高 ==========
+    --su-line-height: 1.5715;
+
+    // ========== 阴影 ==========
+    --su-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+    --su-box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    --su-box-shadow-lighter: 0 0 6px rgba(0, 0, 0, 0.12);
+    --su-box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+
+    // ========== 过渡 ==========
+    --su-transition-duration: 0.3s;
+    --su-transition-duration-fast: 0.2s;
+
+    // ========== 组件尺寸 ==========
+    --su-component-size-large: 40px;
+    --su-component-size: 32px;
+    --su-component-size-small: 24px;
+
+    // ========== 遮罩 ==========
+    --su-overlay-color: rgba(0, 0, 0, 0.5);
+
+    // ========== z-index ==========
+    --su-z-index-normal: 1;
+    --su-z-index-top: 1000;
+    --su-z-index-popup: 2000;
+    --su-z-index-overlay: 3000;
+}

@@ -1,0 +1,72 @@
+/**
+ * SvelteUI 全局样式入口
+ * 全量引用时导入此文件: import 'svelte-ui/styles/index.scss'
+ * 按需引用时仅需: import 'svelte-ui/styles/var.scss'
+ */
+
+@use 'var';
+
+// ========== 基础重置 ==========
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// ========== 全局过渡动画 ==========
+.su-fade-enter-active,
+.su-fade-leave-active {
+    transition: opacity var(--su-transition-duration) ease;
+}
+
+.su-fade-enter-from,
+.su-fade-leave-to {
+    opacity: 0;
+}
+
+.su-zoom-enter-active,
+.su-zoom-leave-active {
+    transition:
+        transform var(--su-transition-duration) ease,
+        opacity var(--su-transition-duration) ease;
+}
+
+.su-zoom-enter-from,
+.su-zoom-leave-to {
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.su-slide-down-enter-active,
+.su-slide-down-leave-active {
+    transition:
+        transform var(--su-transition-duration) ease,
+        opacity var(--su-transition-duration) ease;
+}
+
+.su-slide-down-enter-from,
+.su-slide-down-leave-to {
+    transform: translateY(-8px);
+    opacity: 0;
+}
+
+// ========== 滚动条美化 ==========
+.su-scrollbar {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: var(--su-text-color-disabled);
+        border-radius: 3px;
+
+        &:hover {
+            background: var(--su-text-color-secondary);
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
