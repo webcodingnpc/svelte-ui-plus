@@ -1,6 +1,6 @@
 {
     "name": "svelte-ui-plus",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "type": "module",
     "description": "基于 Svelte 5 的 UI 组件库，提供 78+ 组件",
     "keywords": [
@@ -30,7 +30,8 @@
         "./dist/styles.css": "./dist/styles.css",
         "./dist/*": "./dist/*",
         "./styles/*": "./styles/*",
-        "./components/*": "./components/*"
+        "./components/*": "./components/*",
+        "./utils/*": "./utils/*"
     },
     "unpkg": "./dist/svelte-ui-plus.iife.js",
     "jsdelivr": "./dist/svelte-ui-plus.iife.js",
@@ -40,7 +41,8 @@
         "styles",
         "utils",
         "index.ts",
-        "README.md","README.zh-CN.md"
+        "README.md",
+        "README.zh-CN.md"
     ],
     "sideEffects": [
         "**/*.css",
